@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Counter - vue 2 - local - from props</h2>
-    <h3>{{ count }}  ⬅️ - <span class="warn">bug when updating pina</span></h3>
+    <h3>{{ count }}  ⬅️ - <span class="warn">bug when updating pinia</span></h3>
   </div>
 </template>
 
