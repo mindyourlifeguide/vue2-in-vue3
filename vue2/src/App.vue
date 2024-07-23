@@ -1,9 +1,11 @@
 <template>
   <div class="root">
     <h1>vue 2 app - remote</h1>
+    <div class="content">
     <CounterLocal/>
     <Counter/>
     <Counter2/>
+    </div>
   </div>
 </template>
 
@@ -33,5 +35,13 @@ h1 {
   padding: 10px;
   border-radius: 10px;
   border: 1px solid darkblue;
+}
+
+.content{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-content: space-between
 }
 </style>

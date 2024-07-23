@@ -1,9 +1,11 @@
 <template>
   <div class="root-vue3">
     <h1>vue 3 app - host</h1>
+    <div class="content">
     <CounterLocal/>
     <Counter/>
     <Counter2/>
+    </div>
     <div id="vue2app"></div>
     <App2/>
   </div>
@@ -40,5 +42,13 @@ h1 {
   padding: 10px;
   border-radius: 10px;
   border: 1px solid darkblue;
+}
+
+.content{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-content: space-between
 }
 </style>
