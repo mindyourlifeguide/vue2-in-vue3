@@ -18,17 +18,15 @@ export default {
 .button{
   width: min-content;
   text-wrap: nowrap;
-  background: palevioletred;
+  background: powderblue;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid darkred;
-  color: wheat;
+  border: 1px solid blue;
+  color: blue;
   &:hover{
-  background: hotpink;
-  color: white;
-
+  background: lightblue;
     &:active{
-      background: darkred;
+      background: lightskyblue;
     }
   }
 }
