@@ -1,17 +1,12 @@
 <template>
-  <div style="color: red;">
-    {{ title }}
-    <div>count: {{ count }}</div>
+  <div>
+    <h2>Counter - vue 3 - local - from props</h2>
+    <h3>{{ count }}</h3>
   </div>
 </template>
 
 <script>
 export default {
   props: ['count'],
-  data() {
-    return {
-      title: "Remote Component in Action..",
-    };
-  },
 };
 </script>

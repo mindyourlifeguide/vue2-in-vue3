@@ -1,6 +1,6 @@
 <template>
   <div class="counter">
-    <h2>Counter - vue 2 - pinia shared</h2>
+    <h2>Counter - vue 3 - pinia local</h2>
     <h3>{{ counterStore.counter }}</h3>
     <button @click="counterStore.decrement()">-</button> |
     <button @click="counterStore.increment()">+</button>
@@ -10,7 +10,7 @@
 
 <script setup>
 
-import {useCounterStore} from "@mvp/shared";
+import {useCounterStore} from "../counter-model";
 
 const counterStore = useCounterStore();
 
@@ -18,9 +18,9 @@ const counterStore = useCounterStore();
 
 <style scoped>
 .counter{
-  background: lightgreen;
+  background: bisque;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid red;
+  border: 1px solid saddlebrown;
 }
 </style>

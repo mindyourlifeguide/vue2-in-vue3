@@ -1,41 +1,37 @@
 <template>
-  <div>
-    <h3>Vue2 App</h3>
-    <Content :count="count"/>
-    <Button @btnClick="inc"/>
+  <div class="root">
+    <h1>vue 2 app - remote</h1>
+    <CounterLocal/>
     <Counter/>
     <Counter2/>
   </div>
 </template>
 
 <script>
-import Content from "./components/Content";
-import Button from './components/Button';
 import Counter2 from "./components/Counter2.vue";
 import Counter from "./components/Counter.vue";
+import CounterLocal from "./components/CounterLocal.vue";
 
 export default {
   components: {
-    Counter, Counter2,
-    Content,
-    Button,
+    CounterLocal,
+    Counter,
+    Counter2,
   },
-  data() {
-    return {
-      count: 0,
-    }
-  },
-  methods: {
-    inc() {
-      this.count++;
-      console.log('inc vue 2',this.count )
-    }
-  }
 };
 </script>
 
 <style scoped>
 h1 {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.root{
+  display: grid;
+  grid-gap: 10px;
+  background: lightgoldenrodyellow;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid darkblue;
 }
 </style>
