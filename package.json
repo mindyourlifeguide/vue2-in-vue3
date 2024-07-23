@@ -1,0 +1,16 @@
+{
+  "name": "vue2-in-vue3",
+  "description": "This example demos a vue3 application loading remote vue2 component.`vue3` app depends on a component exposed by `vue2` app.",
+  "private": true,
+  "workspaces": [
+    "./vue2",
+    "./vue3"
+  ],
+  "version": "0.0.0",
+  "scripts": {
+    "start": "pnpm --filter vue2-in-vue3_vue* --parallel start",
+    "build": "pnpm --filter vue2-in-vue3_vue* build",
+    "serve": "pnpm --filter vue2-in-vue3_vue* --parallel serve",
+    "clean": "pnpm --filter vue2-in-vue3_vue* --parallel clean"
+  }
+}
